@@ -17,13 +17,13 @@ Add `[im.chit/kiran "0.1.0"]` to your `project.clj` requirements
 
     (use kiran.core)
 
-		(def a (p/cell :a 0))
-		(def b (p/cell :b 0))
-		(def c (p/cell :c 0))
-		(def pg0 (p/connect [a b] c +))
-		
-		(a 1)
-		@c  ;;=>  1
+    (def a (p/cell :a 0))
+    (def b (p/cell :b 0))
+    (def c (p/cell :c 0))
+    (def pg0 (p/connect [a b] c +))
+    
+    (a 1)
+    @c  ;;=>  1
 
 ## License
 
