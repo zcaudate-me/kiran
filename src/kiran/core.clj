@@ -15,6 +15,9 @@
                          (~catch-val ~'t)
                          :else ~catch-val)))))
 
+(defn atom? [obj] (instance? clojure.lang.Atom obj))
+(defn aref? [obj] (instance? clojure.lang.Ref obj))
+
 (defn set-value!
   "Change the value contained within a ref or atom.
 
@@ -113,7 +116,7 @@
   PutProtocol
   (put! [cell k val]
     (if-let [res (get state k)]
-      (if (iref? res)]
+      (if (iref? res)
         (set-value! res val)))
     cell)
 

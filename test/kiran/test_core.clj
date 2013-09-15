@@ -5,7 +5,6 @@
 (defn under [num]
   (fn [p n] (or (< num n) (< num n))))
 
-
 (def a (p/cell :a 0))
 (def b (p/cell :b 0))
 (def c (p/cell :c 0))

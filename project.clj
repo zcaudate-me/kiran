@@ -1,4 +1,4 @@
-(defproject im.chit/kiran "0.0.9"
+(defproject im.chit/kiran "0.1.0"
   :description "Implementation of `propagators` in clojure"
   :url "http://github.com/zcaudate/kiran"
   :license {:name "The MIT License"
